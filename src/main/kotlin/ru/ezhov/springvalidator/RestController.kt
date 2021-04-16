@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
-import ru.ezhov.springvalidator.model.notwork.NotWorkParent
-import ru.ezhov.springvalidator.model.work.WorkParent
+import ru.ezhov.springvalidator.model.get.GetParent
+import ru.ezhov.springvalidator.model.field.FieldParent
 import javax.validation.Valid
 
 @RestController
@@ -16,19 +16,19 @@ class RestController {
 
     @RequestMapping(
             method = [RequestMethod.POST],
-            value = ["/not-work"],
+            value = ["/get"],
             consumes = ["application/json"]
     )
     fun test1(
-            @Valid @RequestBody notWorkParent: NotWorkParent
-    ): String = notWorkParent.toString()
+            @Valid @RequestBody getParent: GetParent
+    ): String = getParent.toString()
 
     @RequestMapping(
             method = [RequestMethod.POST],
-            value = ["/work"],
+            value = ["/field"],
             consumes = ["application/json"]
     )
     fun test2(
-            @Valid @RequestBody workParent: WorkParent
-    ): String = workParent.toString()
+            @Valid @RequestBody fieldParent: FieldParent
+    ): String = fieldParent.toString()
 }

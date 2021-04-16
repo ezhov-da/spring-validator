@@ -1,7 +1,7 @@
 # NOT WORK ===
 # WORK! A BUG?
 
-POST http://localhost:8080/valid/not-work
+POST http://localhost:8080/valid/get
 Content-Type: application/json
 Cache-Control: no-cache
 
@@ -15,7 +15,7 @@ Cache-Control: no-cache
 
 ###
 # NOT WORK - CORRECT !
-POST http://localhost:8080/valid/not-work
+POST http://localhost:8080/valid/get
 Content-Type: application/json
 Cache-Control: no-cache
 
@@ -29,7 +29,7 @@ Cache-Control: no-cache
 
 ### WORK ===
 
-POST http://localhost:8080/valid/work
+POST http://localhost:8080/valid/field
 Content-Type: application/json
 Cache-Control: no-cache
 
@@ -43,7 +43,7 @@ Cache-Control: no-cache
 
 ###
 
-POST http://localhost:8080/valid/work
+POST http://localhost:8080/valid/field
 Content-Type: application/json
 Cache-Control: no-cache
 

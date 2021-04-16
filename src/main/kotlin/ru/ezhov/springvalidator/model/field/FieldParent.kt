@@ -1,12 +1,12 @@
-package ru.ezhov.springvalidator.model.notwork
+package ru.ezhov.springvalidator.model.field
 
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
 
-data class NotWorkParent(
-        @get:NotNull @get:Size(min = 1)
+data class FieldParent(
+        @field:NotNull @get:Size(min = 1)
         val source: kotlin.String,
 
-        @get:NotNull
+        @field:NotNull
         val child: Child
 )

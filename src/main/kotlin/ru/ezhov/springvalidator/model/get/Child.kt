@@ -1,4 +1,4 @@
-package ru.ezhov.springvalidator.model.notwork
+package ru.ezhov.springvalidator.model.get
 
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size

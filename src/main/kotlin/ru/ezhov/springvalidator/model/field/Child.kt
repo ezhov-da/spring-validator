@@ -1,4 +1,4 @@
-package ru.ezhov.springvalidator.model.work
+package ru.ezhov.springvalidator.model.field
 
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
